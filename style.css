@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100&family=Beau+Rivage&family=Bebas+Neue&family=Comfortaa:wght@600&family=Festive&family=Grape+Nuts&family=Montserrat:wght@400;900&family=Ms+Madi&family=Nunito&family=Nunito+Sans&family=Open+Sans:wght@400;500;600&family=Oswald:wght@200;700&family=Poppins:wght@300;500&family=Quintessential&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;700;900&family=RocknRoll+One&family=Smooch+Sans:wght@200&family=Spectral:wght@700&family=Updock&family=Vollkorn:wght@500&family=Water+Brush&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
 }
 
 header {
@@ -67,6 +70,71 @@ input {
   border: 2px solid black;
 }
 
+.img-fundo {
+  background-image: url("Imagens/bob-plano.png");
+  background-position: center;
+  width: 100%;
+  height: 35rem;
+  background-repeat: no-repeat;
+  background-color: #ffe4aa;
+}
+
+.box {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+h1 {
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #128596;
+  letter-spacing: 4px;
+}
+
+.person a {
+  color: #d56e0e;
+}
+
+.person ul {
+  width: 300px;
+  list-style: none;
+}
+
+.person li {
+  padding: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.person li:hover {
+  background-color: #febd81;
+}
+
+.history {
+  padding: 40px;
+}
+
+.box-text {
+  margin: 0 auto;
+  width: 500px;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #128596;
+  font-size: 50px;
+}
+
+.line {
+  width: 150px;
+  height: 3px;
+  background-color: gray;
+  position: absolute;
+  right: 30px;
+}
+
+/* Aqui começa o @media */
 @media (max-width: 820px) {
   .navigation {
     display: none;
@@ -80,5 +148,27 @@ input {
     position: relative;
     right: 20px;
     margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .person {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: 100px;
+  }
+
+  .box {
+    padding: 0px;
+  }
+
+  .person li {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 16px;
   }
 }
